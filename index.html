@@ -11,7 +11,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
         <link rel="stylesheet" href="css/custom.css">
         <!--<link rel="stylesheet" href="css/print/pdf.css" type="text/css">-->
@@ -89,14 +89,107 @@
                     <section>
                         <h2>IPv4</h2>
                         <img src="img/ipv4.png" class="no-shadow"/>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>eth0</th>
+                                    <th>eth1</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PC 1</td>
+                                    <td>10.0.1.1</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>PC 2</td>
+                                    <td>10.0.1.2</td>
+                                    <td>10.0.2.2</td>
+                                </tr>
+                                <tr>
+                                    <td>PC 3</td>
+                                    <td>10.0.3.3</td>
+                                    <td>10.0.2.3</td>
+                                </tr>
+                                <tr>
+                                    <td>PC 4</td>
+                                    <td>10.0.3.4</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
                     <section>
                         <h2>IPv6</h2>
                         <img src="img/ipv6.png"  class="no-shadow"/>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>eth0</th>
+                                <th>eth1</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>PC 1</td>
+                                <td>20fe::1:0:1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>PC 2</td>
+                                <td>20fe::1:0:2</td>
+                                <td>20fe::2:0:2</td>
+                            </tr>
+                            <tr>
+                                <td>PC 3</td>
+                                <td>20fe::3:0:3</td>
+                                <td>20fe::2:0:3</td>
+                            </tr>
+                            <tr>
+                                <td>PC 4</td>
+                                <td>20fe::3:0:4</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </section>
                     <section>
                         <h2>6RD</h2>
                         <img src="img/6rd.png"  class="no-shadow"/>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>eth0</th>
+                                <th>eth1</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>PC 1</td>
+                                <td>20fe::1:0:1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>PC 2</td>
+                                <td>20fe::1:0:2</td>
+                                <td>10.0.2.2</td>
+                            </tr>
+                            <tr>
+                                <td>PC 3</td>
+                                <td>20fe::3:0:3</td>
+                                <td>10.0.2.3</td>
+                            </tr>
+                            <tr>
+                                <td>PC 4</td>
+                                <td>20fe::3:0:4</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </section>
 				</section>
 
