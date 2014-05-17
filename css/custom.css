@@ -1,0 +1,7 @@
+.reveal section img {
+    border: none;
+}
+
+.no-shadow {
+    box-shadow: none !important;
+}
