@@ -42,14 +42,14 @@
 					<h1>IPv6 Tunnels</h1>
                     <h3>Een project voor Netwerk Protocols</h3>
 					<p>
-						<small>Door Ruben Vereecken & Ruben Mennes</small>
+						<small>Door Ruben Vereecken en Ruben Mennes</small>
 					</p>
 				</section>
-				<section>
+				<section id="Overzicht">
 					<h2>Overzicht</h2>
 					<ol>
                         <li>Inleiding</li>
-                        <li>Test Setup</li>
+                        <li>Test methode</li>
                         <li>Resultaten</li>
                         <li>Conclusies</li>
 					</ol>
@@ -59,21 +59,82 @@
 					</aside>
 				</section>
 
-				<section>
+				<section id="Inleiding">
 					<section>
                         <h2>Inleiding</h2>
+                        <h3>Probleem</h3>
                         <ul>
-                            <li>Wat</li>
-                            <li>Waarom</li>
+                            <li>IPv4 adressen zijn op.</li>
+                            <li>IPv6 is de oplossing</li>
+                            <li>Overgang van IPv4 naar IPv6 nodig</li>
                         </ul>
-					</section>
-                    <section>
-                        <h2>Wat</h2>
                     </section>
                     <section>
-                        <h2>Waarom</h2>
+                        <h3>Mogelijke oplossingen</h3>
+                        <ul>
+                            <li class="fragment">
+                                <p>6to4</p>
+                                <img src="./images/6to4-wiki.png" alt="Meny" height="50%" width="50%"/>
+                            </li>
+                            <li class="fragment">
+                                <p>6RD</p>
+                                <img src="./images/6RD-wiki.png" alt="Meny" height="50%" width="50%"/>
+                                
+                            </li>
+                        </ul>
                     </section>
+                    <section>
+                        <h2>Hoe performant zijn deze oplossingen?</h2>
+                    </section>
+                    <aside class="notes">
+						TODO! Notities schrijven!
+					</aside>
 				</section>
+                <section id="Methode">
+                    <section>
+                        <h2>Test methode</h2>
+                        <h3>3 Test cases</h3>
+                        <ul>
+                            <li class="fragment">IPv4</li>
+                            <li class="fragment">IPv6</li>
+                            <li class="fragment">6RD</li>
+                            <li class="fragment"><strike>6to4</strike></li>
+                        </ul>
+                        <aside class="notes">
+                            We onderzochten 6to4 niet omdat deze veel lastiger is om op te stellen en omdat we te weinig computer hadden om realistische een asyncroon path te maken.
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Test methode</h2>
+                        <div class="fragment">
+                            <h3>Opstelling basis</h3>
+                            <img src="./images/base.png" alt="Meny" height="100%" width="100%"/>
+                        </div>
+                        <div class="fragment">
+                            <h3>Opstelling IPv4</h3>
+                            <img src="./images/ipv4.png" alt="Meny" height="100%" width="100%"/>
+                        </div>
+                        <div class="fragment">
+                            <h3>Opstelling IPv6</h3>
+                            <img src="./images/ipv6.png" alt="Meny" height="100%" width="100%"/>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Test methode</h2>
+                        <div>
+                            <h3>Opstelling 6RD</h3>
+                            <img src="./images/6rd.png" alt="Meny" height="100%" width="100%"/>
+                        </div>
+                        <div>
+                            <h3>Opstelling IPv4</h3>
+                            <img src="./images/ipv4.png" alt="Meny" height="100%" width="100%"/>
+                        </div>
+                        <div>
+                            <h3>Opstelling IPv6</h3>
+                            <img src="./images/ipv6.png" alt="Meny" height="100%" width="100%"/>
+                        </div>
+                    </section>
+                </section>
 
 				<section>
 					<h2>Slides</h2>
