@@ -77,11 +77,11 @@
                         <ul>
                             <li class="fragment">
                                 <p>6to4</p>
-                                <img src="./images/6to4-wiki.png" alt="Meny" height="50%" width="50%"/>
+                                <img src="./img/6to4-wiki.png" alt="Meny" height="50%" width="50%"/>
                             </li>
                             <li class="fragment">
                                 <p>6RD</p>
-                                <img src="./images/6RD-wiki.png" alt="Meny" height="50%" width="50%"/>
+                                <img src="./img/6RD-wiki.png" alt="Meny" height="50%" width="50%"/>
                                 
                             </li>
                         </ul>
@@ -216,11 +216,97 @@
                             </tbody>
                         </table>
                     </section>
+					<section>
+						<h2>Test methode</h2>
+						<h3>Kenmerken om te testen</h3>
+						<ul>
+							<li class="fragment">Lantecy (via ping)</li>
+							<li class="fragment">Throughput (via iPerf)</li>
+							<li class="fragment">Loss (via iPerf)</li>
+							<li class="fragment">Jitter (via iPerf)</li>
+						<ul>
+					</section>
+					<section>
+						<h2>Test methode</h2>
+						<h3>Test idee</h3>
+						<ul>
+							<li class="fragment">PC4 stuurt tegen 1000Mb/sec</li>
+							<li class="fragment">We kijken wat er toekomt bij PC1 gedurende 10 sec</li>
+							<li class="fragment">We gebruiken UDP met verschillende grote van data
+								<ul>
+									<li>86 bytes</li>
+									<li>128 bytes</li>
+									<li>256 bytes</li>
+									<li>512 bytes</li>
+									<li>768 bytes</li>
+									<li>1024 bytes</li>
+									<li>1280 bytes</li>
+									<li>1448 bytes</li>
+									<li>1518 bytes</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
 					<section>
                         <h2>Resultaten</h2>
+					</section>
+					<section>
+						<h2>Resultaten</h2>
+						<h3>Latency</h3>
+						<table>
+							<tr>
+								<th></th>
+								<th>IPv4</th>
+								<th>IPv6</th>
+								<th>6RD<th>
+							</tr>
+							<tr>
+								<th>Minimum</th>
+								<td>0.554 ms</td>
+								<td>0.742 ms</td>
+								<td>0.754 ms</td>
+							</tr>
+							<tr>
+								<th>Gemiddelde</th>
+								<td>0.870 ms</td>
+								<td>0.986 ms</td>
+								<td>1.008 ms</td>
+							</tr>
+							<tr>
+								<th>Maximum</th>
+								<td>1.178 ms</td>
+								<td>1.183 ms</td>
+								<td>1.803 ms</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Resultaten</h2>
+						<h3>Throughput</h3>
+						<img src="./img/throughput.png" alt="Meny"/>
+					</section>
+					<section>
+						<h2>Resultaten</h2>
+						<h3>Throughput</h3>
+						<img src="./img/speed.png" alt="Meny"/>
+					</section>
+					<section>
+						<h2>Resultaten</h2>
+						<h3>Ontvangen pakketten</h3>
+						<img src="./img/packet.png" alt="Meny"/>
+					</section>
+					<section>
+						<h2>Resultaten</h2>
+						<h3>Jitter</h3>
+						<img src="./img/jitter.png" alt="Meny"/>
+					</section>
+					<section>
+						<h2>Resultaten</h2>
+						<h3>Loss</h3>
+						<img src="./img/lost.png" alt="Meny"/>
 					</section>
 				</section>
 
