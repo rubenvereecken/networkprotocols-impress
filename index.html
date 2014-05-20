@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>IPv6 Tunnels | Ruben Vereecken & Ruben Mennes</title>
+		<title>IPv6 Tunnels | Ruben Mennes & Ruben Vereecken</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -37,7 +37,7 @@
 
 	<body>
 	    <div class="presentation-details">
-	        IPv6 Tunnels | Ruben Vereecken & Ruben Mennes
+	        IPv6 Tunnels | Ruben Mennes & Ruben Vereecken  
 	    </div>
 
 		<div class="reveal">
@@ -47,7 +47,7 @@
 					<h1>IPv6 Tunnels</h1>
                     <h3>Een project voor Netwerk Protocols</h3>
 					<p>
-						<small>Door Ruben Vereecken en Ruben Mennes</small>
+						<small>Door Ruben Mennes & Ruben Vereecken</small>
 					</p>
 				</section>
 				<section id="Overzicht">
@@ -224,19 +224,27 @@
 						<h2>Test methode</h2>
 						<h3>Kenmerken om te testen</h3>
 						<ul>
-							<li class="fragment">Lantecy (via ping)</li>
-							<li class="fragment">Throughput (via iPerf)</li>
-							<li class="fragment">Loss (via iPerf)</li>
-							<li class="fragment">Jitter (via iPerf)</li>
+							<li class="fragment">Latency (via ping)</li>
+							<li class="fragment">Throughput (via iperf)</li>
+							<li class="fragment">Loss (via iperf)</li>
+							<li class="fragment">Jitter (via iperf)</li>
 						<ul>
 					</section>
 					<section>
+					    <h2>Test Methode</h2>
+					    <h3>ping</h3>
+					    <ul>
+					        <li class="fragment">PC4 pingt 100 keer naar PC1</li>
+					        <li class="fragment">Ping geeft gemiddelde latency</li>
+					    </ul>
+					</section>
+					<section>
 						<h2>Test methode</h2>
-						<h3>Test idee</h3>
+						<h3>iperf</h3>
 						<ul>
-							<li class="fragment">PC4 stuurt tegen 1000Mb/sec</li>
+							<li class="fragment">PC4 stuurt tegen 1000Mb/sec naar PC1</li>
 							<li class="fragment">We kijken wat er toekomt bij PC1 gedurende 10 sec</li>
-							<li class="fragment">We gebruiken UDP met verschillende grote van data
+							<li class="fragment">We gebruiken UDP met verschillende grootte van data
 								<ul>
 									<li>86 bytes</li>
 									<li>128 bytes</li>
@@ -248,6 +256,9 @@
 									<li>1448 bytes</li>
 									<li>1518 bytes </li>
 								</ul>
+							</li>
+							<li class="fragment">
+							    X 100
 							</li>
 						</ul>
 					</section>
@@ -286,16 +297,18 @@
 								<td>1.803 ms</td>
 							</tr>
 						</table>
-					</section>
-					<section>
-						<h2>Resultaten</h2>
-						<h3>Throughput</h3>
-						<img src="./img/throughput.png" alt="Meny"/>
+						<aside>
+						    Pings van grootte 64 bytes.
+						    Groot verschil tussen IPv4 en IPv6, te danken aan een grotere header.
+						    Respectievelijk zijn de headers 20, 40 en 60 (40+20) bytes groot.
+						</aside>
 					</section>
 					<section>
 						<h2>Resultaten</h2>
 						<h3>Throughput</h3>
 						<img src="./img/speed.png" alt="Meny"/>
+						<aside>
+						</aside>
 					</section>
 					<section>
 						<h2>Resultaten</h2>
@@ -317,6 +330,18 @@
                 <section>
                     <section>
                         <h2>Conclusies</h2>
+                        <aside>
+                            IPv4: 20 bytes (ideaal 1442)
+                            IPv6: 40 bytes (ideaal dus 1280)
+                            6rd: 60 bytes (ideaal dus 1280)
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Snelheid</h2>
+                        <ol>
+                            <li class="fragment">IPv4 fragmenteert later dan IPv6 of 6rd</li>
+                            <li class="fragment">
+                        </ol>
                     </section>
                 </section>
 
@@ -373,6 +398,7 @@
 				history: true,
 				center: true,
 				slideNumber: true,
+				mouseWheel:true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
