@@ -310,38 +310,64 @@
 						<aside class="notes">
 						</aside>
 					</section>
-					<section>
-						<h2>Resultaten</h2>
-						<h3>Ontvangen pakketten</h3>
-						<img src="./img/Packets.png" alt="Meny"/>
+                    <section>
+                        <h2>Resultaten</h2>
+                        <h3>Throughput</h3>
+                        <ul>
+                            <li class="fragment">Voor IPv4 en IPv6 fragmentatie bij 1448 bytes</li>
+                            <li class="fragment">Voor 6RD al vroeger</li>
+                            <li class="fragment">Tunnel is traag</li>
+                    </section>
+                    <section>
+                        <h2>Resultaten</h2>
+                        <h3>Loss</h3>
+                        <img src="./img/LostPercent.png" alt="Meny"/>
 					</section>
+                    <section>
+                        <h2>Resultaten</h2>
+                        <h3>Loss</h3>
+                        <ul>
+                            <li class="fragment">Tunnel is de bottleneck</li>
+                        </ul>
+                    </section>
 					<section>
 						<h2>Resultaten</h2>
 						<h3>Jitter</h3>
 						<img src="./img/Jitter.png" alt="Meny"/>
 					</section>
-					<section>
-						<h2>Resultaten</h2>
-						<h3>Loss</h3>
-						<img src="./img/LostPercent.png" alt="Meny"/>
-					</section>
+                    <section>
+                        <h2>Resultaten</h2>
+                        <h3>Jitter</h3>
+                        <ul>
+                            <li class="fragment">Veel loss</li>
+                            <li class="fragment">Grotere packetten</li>
+                            <li class="fragment">Zorgt voor grote jitter</li>
+                        </ul>
+                    </section>
 				</section>
 
                 <section>
                     <section>
                         <h2>Conclusies</h2>
-                        <aside>
-                            IPv4: 20 bytes (ideaal 1442)
-                            IPv6: 40 bytes (ideaal dus 1280)
-                            6rd: 60 bytes (ideaal dus 1280)
-                        </aside>
                     </section>
                     <section>
-                        <h2>Snelheid</h2>
-                        <ol>
-                            <li class="fragment">IPv4 fragmenteert later dan IPv6 of 6rd</li>
-                            <li class="fragment">
-                        </ol>
+                        <h2>Conclusies</h2>
+                        <div>
+                            <div style="float: left; width: 50%;">
+                                <h3>Positief</h3>
+                                <ul>
+                                    <li class="fragment">Makkelijk om op te zetten</li>
+                                    <li class="fragment">Goede oplossing voor IPv6 in IPv4</li>
+                                </ul>
+                            </div>
+                            <div style="float: left; width: 50%">
+                                <h3>Negatief</h3>
+                                <ul>
+                                    <li class="fragment">6RD heeft een grote delay</li>
+                                    <li class="fragment">Extra belasting voor het netwerk</li>
+                                </ul>
+                            </div>
+                        </div>
                     </section>
                 </section>
 
